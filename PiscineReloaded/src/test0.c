@@ -6,7 +6,7 @@
 /*   By: amaitre <amaitre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/20 22:00:43 by amaitre           #+#    #+#             */
-/*   Updated: 2016/11/07 21:08:12 by amaitre          ###   ########.fr       */
+/*   Updated: 2016/11/09 20:36:48 by amaitre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void corr_test0(void)
 	{
 		if (i >= 0)
 		{
-			data = ft_strsplit(line, ' ');
+			data = ft_strsplit(line, ' ');-
 			if (ft_strcmp(data[0], test[i]))
 			{
 				ft_printf("TEST0 = {{red}KO{eoc}} -> test%d fail %s != %s\n", i, data[0], test[i]);
