@@ -6,7 +6,7 @@
 /*   By: amaitre <amaitre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/20 22:00:43 by amaitre           #+#    #+#             */
-/*   Updated: 2016/11/07 20:51:11 by amaitre          ###   ########.fr       */
+/*   Updated: 2016/11/13 22:03:36 by amaitre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,5 @@ void corr_test1(void)
 		ft_printf("TEST1 = {{red}KO{eoc}} -> Fichier z NON CONFORME\n");
 	else
 		ft_printf("TEST1 = {{green}OK{eoc}}\n");
-	if (!KEEP_FILE)
-		unlink("1.test");
 	close(fd);
 }

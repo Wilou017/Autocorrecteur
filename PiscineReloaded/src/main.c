@@ -6,7 +6,7 @@
 /*   By: amaitre <amaitre@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/20 20:09:39 by amaitre           #+#    #+#             */
-/*   Updated: 2016/11/07 20:35:37 by amaitre          ###   ########.fr       */
+/*   Updated: 2016/11/13 22:03:28 by amaitre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,9 @@ void corr_test(int test)
 		case 1:
 			corr_test1();
 			break;
+		case 2:
+			corr_test2();
+			break;
 		default:
 			break;
 	}
@@ -50,9 +53,13 @@ void corr_test(int test)
 
 int main(int argc, char const *argv[])
 {
-		ft_putmessage("Correcteur Piscine Reloaded");
+	int NB_TEST = 3;
 
-		corr_test(0);
-		corr_test(1);
-		return (0);
+	ft_putmessage("Correcteur Piscine Reloaded");
+
+	for (int i = 0; i < NB_TEST; i++)
+		corr_test(i);
+	if (!KEEP_FILE)
+		system("rm -Rf *.test");
+	return (0);
 }
